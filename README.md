@@ -5,7 +5,9 @@ Boilerplate configuration for RSpec, including support files for Devise, Factory
 My configurations use the following gems as dependencies: 
 
 ```
+# note that capybara is included by default in Rails 5.1+
 gem 'capybara'
+
 gem 'database_cleaner-active_record'
 gem 'factory_bot_rails'
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
@@ -98,3 +100,21 @@ RSpec.configure do |config|
   config.include Devise::Test::IntegrationHelpers, type: :request
 end
 ```
+
+# sources and documentation
+
+[RSpec](https://github.com/rspec/rspec-rails)
+[Devise](https://github.com/heartcombo/devise/wiki/How-To:-Test-controllers-with-Rails-(and-RSpec))
+[FactoryBot](https://github.com/thoughtbot/factory_bot/blob/master/GETTING_STARTED.md#rspec)
+[SimpleCov](https://github.com/simplecov-ruby/simplecov)
+[Capybara](https://github.com/teamcapybara/capybara)
+[Database Cleaner](https://github.com/DatabaseCleaner/database_cleaner)
+[Pundit Matchers](https://github.com/chrisalley/pundit-matchers)
+[WebMock](https://github.com/bblimke/webmock)
+
+
+
+
+
+
+
