@@ -16,7 +16,7 @@ gem 'simplecov', require: false
 gem 'webmock'
 ```
 
-I made this because I've spent way too much time in the past configuring RSpec from zero. This repository can be cloned directly into the `spec` app directory, or used referentially. If cloned, please ensure that `rails_helper.rb` contains the following:
+I made this because I've spent way too much time in the past configuring RSpec from zero. This repository can be cloned, and the `support` path moved to the `spec` app directory, or used referentially. If cloned, please ensure that `rails_helper.rb` contains the following (the repo also has sample helpers for both `rails` and `spec`):
 
 ```
 # This file is copied to spec/ when you run 'rails generate rspec:install'
